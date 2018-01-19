@@ -316,9 +316,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 10.0
-margin/top = 420.0
+margin/top = 415.0
 margin/right = 79.0
-margin/bottom = 479.0
+margin/bottom = 474.0
 texture = ExtResource( 9 )
 stretch_mode = 0
 
@@ -329,9 +329,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 80.0
-margin/top = 420.0
+margin/top = 415.0
 margin/right = 149.0
-margin/bottom = 479.0
+margin/bottom = 474.0
 texture = ExtResource( 9 )
 stretch_mode = 0
 
@@ -342,9 +342,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 150.0
-margin/top = 420.0
+margin/top = 415.0
 margin/right = 219.0
-margin/bottom = 479.0
+margin/bottom = 474.0
 texture = ExtResource( 9 )
 stretch_mode = 0
 
