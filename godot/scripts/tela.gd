@@ -12,6 +12,8 @@ var pontuacao = 0
 var saude = 3
 var high = 0
 
+var high_label
+
 func _ready():
 	bomba_resource = load("res://cenas/bomba.tscn")
 	queijo_resource = load("res://cenas/queijo.tscn")
@@ -20,7 +22,8 @@ func _ready():
     	create_save()
 	else:
 		high = read_savegame()
-	var high_label = get_node("high")
+	high_label = get_node("high")
+	high_label.set("custom_colors/font_color", Color(1,0,0))
 	high_label.set_text(str(high))
 
 func _on_bomba_timer_timeout():
@@ -39,6 +42,9 @@ func adiciona_pontos(pontos):
 	pontuacao += pontos
 	var pontos_label = get_node("pontos_label")
 	pontos_label.set_text(str(pontuacao))
+	if (high-pontuacao)<0 :
+		high_label.set("custom_colors/font_color", Color(0,1,0))
+	high_label.set_text(str(abs(high-pontuacao)))
 	
 func atualiza_saude(valor):
 	saude += valor
