@@ -15,6 +15,7 @@ var high = 0
 var high_label
 
 func _ready():
+	get_tree().set_pause(false)
 	bomba_resource = load("res://cenas/bomba.tscn")
 	queijo_resource = load("res://cenas/queijo.tscn")
 	moeda_resource = load("res://cenas/moeda.tscn")

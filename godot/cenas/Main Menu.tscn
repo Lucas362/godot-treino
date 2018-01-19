@@ -27,6 +27,7 @@ __meta__ = {
 
 [node name="PLAY" type="Button" parent="."]
 
+process/pause_mode = 2
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -43,6 +44,7 @@ flat = false
 
 [node name="QUIT" parent="." instance=ExtResource( 3 )]
 
+process/pause_mode = 2
 margin/left = 300.0
 margin/top = 330.0
 margin/right = 362.0
@@ -64,6 +66,7 @@ stretch_mode = 0
 
 [node name="quitPanel" type="PopupPanel" parent="."]
 
+process/pause_mode = 2
 visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -92,6 +95,7 @@ max_lines_visible = -1
 
 [node name="yesButton" type="Button" parent="quitPanel"]
 
+process/pause_mode = 2
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -108,6 +112,7 @@ flat = false
 
 [node name="noButton" type="Button" parent="quitPanel"]
 
+process/pause_mode = 2
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
