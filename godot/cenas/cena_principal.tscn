@@ -3,8 +3,8 @@
 [ext_resource path="res://scripts/tela.gd" type="Script" id=1]
 [ext_resource path="res://texturas/full-background.png" type="Texture" id=2]
 [ext_resource path="res://scripts/player.gd" type="Script" id=3]
-[ext_resource path="res://texturas/player/spr_ratrun_strip4_aqua_0.png" type="Texture" id=4]
-[ext_resource path="res://texturas/player/spr_ratrun_strip4_aqua_1.png" type="Texture" id=5]
+[ext_resource path="res://texturas/player/spr_ratrun_strip4_aqua_1.png" type="Texture" id=4]
+[ext_resource path="res://texturas/player/spr_ratrun_strip4_aqua_0.png" type="Texture" id=5]
 [ext_resource path="res://texturas/player/spr_ratrun_strip4_aqua_2.png" type="Texture" id=6]
 [ext_resource path="res://fonts/montserrat/Montserrat-Bold.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://pixil-layer-Background (4).png" type="Texture" id=8]
@@ -18,14 +18,14 @@ radius = 30.0
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "andando",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "andando",
 "speed": 5.0
 } ]
 
@@ -351,6 +351,7 @@ stretch_mode = 0
 [node name="game_over_popup" type="PopupPanel" parent="."]
 
 process/pause_mode = 2
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
