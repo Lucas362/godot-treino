@@ -1,2 +1,2 @@
 # godot-treino
-primeiro projeto em godot 2
+Primeiro projeto em godot 2
